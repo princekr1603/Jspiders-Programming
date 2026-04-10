@@ -11,7 +11,7 @@ public class ProductFromAToB {
         for(int i=a;i<=b;i++){
             mul=mul*i;
         }
-        System.out.println("Product from "+a+" to "+b+" is: "+mul);
+        System.out.println("Product from "+a+" to "+b+" is:"+mul);
         sc.close();
     }    
 }
