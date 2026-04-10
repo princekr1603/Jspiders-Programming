@@ -8,10 +8,18 @@ public class SumFromAToB {
         System.out.print("Enter b: ");
         int b=sc.nextInt();
         int sum=0;
-        for(int i=a;i<=b;i++){
-            sum=sum+i;
+        if(a<b){
+            for(int i=a;i<=b;i++){
+                sum=sum+i;
+            }
+            System.out.println("Sum from "+a+" to "+b+" is: "+sum);
         }
-        System.out.println("Sum from "+a+" to "+b+" is: "+sum);
+        else{
+            for(int i=a;i>=b;i--){
+                sum=sum+i;
+            }
+            System.out.println("Sum from "+a+" to "+b+" is: "+sum);
+        }
         sc.close();
     }    
 }
