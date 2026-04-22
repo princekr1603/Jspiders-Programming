@@ -34,7 +34,6 @@ public class TwoSum{
 
         while (i < j) {
             int s = arr[i] + arr[j];
-
             if (s == x) {
                 return new int[]{i, j}; 
             } 
@@ -47,13 +46,10 @@ public class TwoSum{
         }
         return new int[]{-1, -1}; 
     }
-
     public static void main(String[] args) {
         int[] arr = {1,2,4,5,6,7,9};
         int x = 16;
-
         int[] result = sum(arr, x);
-
         if (result[0] == -1) {
             System.out.println("element not present");
         } else {
